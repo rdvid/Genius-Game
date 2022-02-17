@@ -1,6 +1,11 @@
+body{
+    background-color: gray;
+}
+
 h1{
     position: relative;
     text-align: center;
+    font-family: Helvetica, sans-serif;
 }
 
 #corpo{
@@ -10,11 +15,13 @@ h1{
     top: 100px;
     border-radius: 100%;
     margin: auto;
-    position: static;
+    display: flex;
 }
+
 
 #yellow-button{
     background-color: yellow;
+    opacity: 0.5;
     height: 180px;
     width: 180px;
     border-top-left-radius: 100%;
@@ -26,13 +33,14 @@ h1{
 
 #green-button{
     background-color: green;
+    opacity: 0.5;
     height: 180px;
     width: 180px;
     border-top-right-radius: 100%;
     border-style: solid;
     border-color: black;
     border-width: 10px;
-    position: relative;
+    position: static;
     left: 200px;
 }
 
@@ -44,6 +52,8 @@ h1{
     border-style: solid;
     border-color: black;
     border-width: 10px;
+    margin: auto;
+    opacity: 0.5;
 }
 
 #red-button{
@@ -54,4 +64,36 @@ h1{
     border-style: solid;
     border-color: black;
     border-width: 10px;
+    opacity: 0.5;
+}
+
+
+#green-button:hover,
+#yellow-button:hover,
+#blue-button:hover,
+#red-button:hover{
+    opacity: 1;
+}
+
+#green-button:active,
+#yellow-button:active,
+#blue-button:active,
+#red-button:active{
+    box-shadow: 0 5px #000;
+    transform: translateY(4px);
+}
+
+.left-size{
+    padding-left: 20px;
+    margin: 0;
+}
+
+.right-size{
+    padding-right: 20px;
+    margin: 0;
+}
+
+#allbuttons{
+    display: flex;
+    margin: auto;
 }
