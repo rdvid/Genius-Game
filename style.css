@@ -1,11 +1,13 @@
+
 body{
-    background-color: gray;
+    background-image: url("background.jpg"); 
 }
 
 h1{
     position: relative;
     text-align: center;
     font-family: Helvetica, sans-serif;
+    opacity: 0;
 }
 
 #corpo{
@@ -68,12 +70,16 @@ h1{
 }
 
 
+/* Button's hover animation*/
+
 #green-button:hover,
 #yellow-button:hover,
 #blue-button:hover,
 #red-button:hover{
     opacity: 1;
 }
+
+/*pressioned button animation*/
 
 #green-button:active,
 #yellow-button:active,
