@@ -103,3 +103,20 @@ h1{
     display: flex;
     margin: auto;
 }
+
+.selected-color-class {
+    animation: selected-color 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes selected-color {
+    
+    0%, 100% {
+        opacity: 0.5;
+    }
+    
+    50% {
+        opacity: 1;
+    }
+
+}
